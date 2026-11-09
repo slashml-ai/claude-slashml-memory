@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ml-memory": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/hooks/slashml-mcp.js"
+      ],
+      "env": {
+        "CLAUDE_PLUGIN_OPTION_API_KEY": "${user_config.api_key}"
+      }
+    }
+  }
+}

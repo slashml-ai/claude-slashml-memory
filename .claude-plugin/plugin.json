@@ -1,0 +1,31 @@
+{
+  "name": "slashml-memory",
+  "version": "1.0.11",
+  "description": "Sub-millisecond persistent memory, ambient lifecycle hooks, behavioral code search, and bug localization for Claude Code.",
+  "icon": ".claude-plugin/icon.png",
+  "author": {
+    "name": "SlashML",
+    "url": "https://slashml.ai"
+  },
+  "homepage": "https://slashml.ai",
+  "repository": "https://github.com/slashml-ai/claude-slashml-memory",
+  "privacyPolicyUrl": "https://slashml.ai/privacy",
+  "license": "Apache-2.0",
+  "keywords": [
+    "slashml",
+    "memory",
+    "mcp",
+    "code-search",
+    "bug-localization",
+    "hooks"
+  ],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "SlashML API Key",
+      "description": "Your SlashML API key (sml_live_...) from https://app.slashml.ai",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}
