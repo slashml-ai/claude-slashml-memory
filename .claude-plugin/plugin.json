@@ -1,7 +1,7 @@
 {
   "name": "slashml-memory",
-  "version": "1.0.12",
-  "description": "Sub-millisecond persistent memory, behavioral code search, and bug localization for Claude Code, Cowork, and Claude apps.",
+  "version": "1.0.14",
+  "description": "Sub-millisecond persistent memory, inline redaction & per-agent access scoping, behavioral code search, and bug localization for Claude Code, Cowork, and Claude apps.",
   "icon": ".claude-plugin/icon.png",
   "author": {
     "name": "SlashML",

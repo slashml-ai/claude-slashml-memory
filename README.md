@@ -9,6 +9,7 @@ Official **SlashML (`/` `ml`)** plugin, skill, and MCP server for sub-millisecon
 SlashML provides persistent conversational memory, repository symbol recall, and automatic rule enforcement for AI coding agents:
 
 - **Persistent Memory (`search_memories`, `add_memory`, `get_memories`, `forget_memory`)**: Store and retrieve architectural decisions, user preferences, and standing project rules across sessions.
+- **Inline Redaction & Per-Agent Access Scoping (`redact_memory`, `X-SlashML-Agent-Id`)**: Mask sensitive spans across 7 compliance buckets (`tier1_secrets`, `soc2_coding`, `gdpr`, `hipaa`, `enterprise_strict`) and enforce per-agent `read_write` / `read_only` access modes.
 - **Behavioral Code Search (`search_code_by_behavior`, `index_repository`)**: Locate functions, classes, and modules by runtime or architectural behavior.
 - **Bug Localization (`find_bug_candidates`)**: Rank candidate functions and files most likely responsible for a symptom or stack trace.
 - **Ambient Lifecycle Hooks (`hooks/hooks.json`)**: Automatically assimilate new standing instructions on `UserPromptSubmit` and check tool calls against active rules on `PreToolUse`, `PostToolUse`, and `Stop`.
@@ -20,7 +21,7 @@ SlashML provides persistent conversational memory, repository symbol recall, and
 Install directly in Claude Code:
 
 ```bash
-/plugin install slashml-memory --marketplace slashml-ai/claude-slashml-memory
+/plugin install slashml-memory --marketplace slashml-ai/ml-memory
 ```
 
 When installing the plugin in Claude Code, provide your SlashML API key (`sml_live_...` from [https://app.slashml.ai](https://app.slashml.ai)) when prompted for the `api_key` plugin option.
@@ -55,4 +56,4 @@ const results = await memory.search("How does auth work?", { userId: "team_backe
 
 Apache-2.0. See [`LICENSE`](./LICENSE) for details.
 
-<!-- mcp-name: io.github.slashml-ai/claude-slashml-memory -->
+<!-- mcp-name: io.github.slashml-ai/ml-memory -->
